@@ -3,15 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Brodinhos | Agenda de Jogatina</title>
-<link rel="stylesheet" href="styles.css">
+<title>CalvoScheduler | Agenda de Jogatina</title>
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <header>
   <div class="brand">
-    <div class="logo">🎮</div>
+    <div class="logo">
+        <span class="logo-tl">👨‍🦲</span>
+        <span class="logo-tr">📅</span>
+        <span class="logo-bl">🎮</span>
+        <span class="logo-br">🐴</span>
+    </div>
     <div>
-      <h1>Brodinhos</h1>
+      <h1>CalvoScheduler</h1>
       <div class="subtitle">Agenda de jogatina</div>
     </div>
   </div>
@@ -23,26 +28,26 @@
       <h2>Disponibilidade semanal</h2>
       <div class="description">Confira quando seus brodinhos estão livres para jogar.</div>
     </div>
-    <div class="legend">
-      <span><i class="dot purple"></i>careca1</span>
-      <span><i class="dot blue"></i>CalvoLord</span>
+    <div class="filter-container">
+        <div class="filter-title">Filtrar calvos:</div>
+        <div class="legend" id="legend"></div>
     </div>
   </div>
   <div class="calendar">
     <div class="grid" id="calendar">
-      <div class="time-head"></div>
-      <div class="day-head">Segunda<small>01</small></div>
-      <div class="day-head">Terça<small>02</small></div>
-      <div class="day-head">Quarta<small>03</small></div>
-      <div class="day-head">Quinta<small>04</small></div>
-      <div class="day-head">Sexta<small>05</small></div>
-      <div class="day-head">Sábado<small>06</small></div>
-      <div class="day-head">Domingo<small>07</small></div>
-      <div class="time-labels" id="times"></div>
+        <div class="time-head"></div>
+        <div class="day-head">Domingo<small></small></div>
+        <div class="day-head">Segunda<small></small></div>
+        <div class="day-head">Terça<small></small></div>
+        <div class="day-head">Quarta<small></small></div>
+        <div class="day-head">Quinta<small></small></div>
+        <div class="day-head">Sexta<small></small></div>
+        <div class="day-head">Sábado<small></small></div>
+        <div class="time-labels" id="times"></div>
     </div>
   </div>
   <footer>Os horários são apresentados no formato de 24 horas. Role a agenda para baixo ou para os lados para explorar a semana.</footer>
 </main>
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
